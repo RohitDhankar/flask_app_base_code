@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <Title> Admin Panel - Upload Questions - eClerx </Title>
+</head>
+
+{% endblock %}
+
+{% block body %}
+
+<body>
+
+    <br>
+    <p> Dear Admin - Kindly uplod your Questions CSV below </p>
+    <br>
+
+<form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload>
+</form>
+
+{% endblock %}
+
+<br>
+<br>
+
+</body>
+</html>
