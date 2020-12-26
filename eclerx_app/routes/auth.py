@@ -6,6 +6,9 @@ from flask_login import current_user, login_required , LoginManager , login_user
 from eclerx_app.extensions import conn_mongo_atlas
 from eclerx_app.models import User as cls_user
 
+from .main import main 
+
+
 auth = Blueprint('auth', __name__)
 
 login_manager = LoginManager()
@@ -52,8 +55,9 @@ def register():
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
+	""" https://github.com/maxcountryman/flask-login/blob/d7b5bcf5d003274227be5c19104c59a821097cd1/flask_login/utils.py#L145
+	"""
 	if request.method == 'POST':
-		
 		# inputs from HTML Template Form ( if any )
 		if request.form :
 			first_name = request.form['first_name']
@@ -88,8 +92,11 @@ def login():
 		else:
 			#print(check_password_hash(hashed_salted_password, plain_text_password)) ## return == True
 			print("---user exists----",user_name_from_mongo)
-			login_user(user_name_from_mongo)
-			return redirect(url_for('main.main_index'))
+			user_obj = cls_user(username = user_name_from_mongo)
+			login_user(user_obj)
+			# https://github.com/maxcountryman/flask-login/blob/d7b5bcf5d003274227be5c19104c59a821097cd1/flask_login/utils.py#L145
+			#return redirect(url_for('main.main_index'))
+			return redirect(url_for('main.index'))
 			#return redirect(url_for('main.questionnaire'))
 	return render_template('login.html')
 

@@ -1,0 +1,464 @@
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 18:35:49] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 93, in login
+    user_obj = cls_user(username = user_name_from_mongo)
+TypeError: __init__() missing 2 required positional arguments: 'email' and 'password'
+127.0.0.1 - - [26/Dec/2020 18:35:49] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:35:49] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:35:49] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:35:49] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:35:49] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 18:36:12] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 93, in login
+    user_obj = cls_user(username = user_name_from_mongo)
+TypeError: __init__() missing 2 required positional arguments: 'email' and 'password'
+127.0.0.1 - - [26/Dec/2020 18:36:12] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:36:12] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:36:12] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:36:12] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:36:12] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 18:38:08] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 93, in login
+    user_obj = cls_user(username = user_name_from_mongo)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/models.py", line 18, in __init__
+    self._id = uuid.uuid4().hex if _id is None else _id
+NameError: name 'uuid' is not defined
+127.0.0.1 - - [26/Dec/2020 18:38:08] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:38:08] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:38:08] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:38:08] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:38:08] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/models.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fd2131d2ac0>
+---Request HTML FORM  - FirstName--- Yamini
+---Request HTML FORM  - LasttName--- Kumari
+---user exists---- YaminiKumari
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/models.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f15d00e9be0>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fbf96bf7c40>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/models.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f08f77068b0>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 18:50:39] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/__init__.py", line 2, in <module>
+    from .models import User
+File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/models.py", line 36
+    users_coll = db.users
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+127.0.0.1 - - [26/Dec/2020 18:50:39] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:50:39] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:50:39] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:50:39] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:50:39] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:51:40] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 93, in login
+    login_user(user_obj)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask_login/utils.py", line 170, in login_user
+    session['_user_id'] = user_id
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/werkzeug/local.py", line 351, in __setitem__
+    self._get_current_object()[key] = value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+127.0.0.1 - - [26/Dec/2020 18:51:40] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:51:40] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:51:40] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:51:40] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 18:51:40] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 19:15:11] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 95, in login
+    return redirect(url_for('main.main_index'))
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.main_index'. Did you mean 'main.index' instead?
+127.0.0.1 - - [26/Dec/2020 19:15:11] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:15:11] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:15:11] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:15:11] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:15:11] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fa0aa6e6e20>
+---Request HTML FORM  - FirstName--- Yamini
+---Request HTML FORM  - LasttName--- Kumari
+---user exists---- YaminiKumari
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f5552505f40>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f0ecedabdc0>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 19:19:43] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 98, in login
+    return redirect(url_for('main.main_index'))
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.main_index'. Did you mean 'main.index' instead?
+127.0.0.1 - - [26/Dec/2020 19:19:43] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:19:43] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:19:43] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:19:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:19:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f7293ef7dc0>
+---Request HTML FORM  - FirstName--- Yamini
+---Request HTML FORM  - LasttName--- Kumari
+---user exists---- YaminiKumari
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fdc84f06dc0>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 19:21:15] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [26/Dec/2020 19:21:18] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:21:18] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 19:21:18] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f12f8be1e50>
+---Request HTML FORM  - FirstName--- Yamini
+---Request HTML FORM  - LasttName--- Kumari
+---user exists---- YaminiKumari
+MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 19:22:28] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 88, in login
+    if not user_name_from_mongo :
+UnboundLocalError: local variable 'user_name_from_mongo' referenced before assignment
+127.0.0.1 - - [26/Dec/2020 19:22:28] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:22:28] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:22:28] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:22:29] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:22:29] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 19:23:33] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:23:33] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 19:23:33] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 19:23:55] "POST /login HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py", line 99, in login
+    return redirect(url_for('main.index'))
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/home/dhankar/anaconda3/envs/drf_venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.index'. Did you mean 'main.index_1' instead?
+127.0.0.1 - - [26/Dec/2020 19:23:55] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:23:55] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:23:55] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:23:55] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 19:23:55] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fc202229340>
+---Request HTML FORM  - FirstName--- Yamini
+---Request HTML FORM  - LasttName--- Kumari
+---user exists---- YaminiKumari
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f9a39163e80>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 20:09:38] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [26/Dec/2020 20:09:42] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:09:42] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:09:42] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f37b9426e80>
+---Request HTML FORM  - FirstName--- Yamini
+---Request HTML FORM  - LasttName--- Kumari
+---user exists---- YaminiKumari
+MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f6ef5008e20>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 20:18:23] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:18:23] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:18:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:21:00] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:21:00] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:21:00] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:23:34] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:23:34] "GET /static/css/main.css HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:23:34] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:25:31] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:25:31] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:25:31] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:25:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /favicon.ico HTTP/1.1" 404 -
