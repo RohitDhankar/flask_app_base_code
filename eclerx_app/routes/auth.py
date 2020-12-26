@@ -47,9 +47,6 @@ def register():
 {"_id":{"$oid":"5fe56a53f54e35c49898fd53"},"first_name":"FirstTestName","last_name":"LastTestName","password":"pbkdf2:sha256:150000$ylpRqlsS$edd651b01d3e828e8be4a57652a64f358d96c8ee820da0d7767cae15dd9945fa"}
 """
 
-### https://stackoverflow.com/questions/54992412/flask-login-usermixin-class-with-a-mongodb
-### https://medium.com/@dmitryrastorguev/basic-user-authentication-login-for-flask-using-mongoengine-and-wtforms-922e64ef87fe
-### https://github.com/drastorguev/flaskmongouserlogintemplate
 
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -88,7 +85,8 @@ def login():
 		if not check_password_hash(hashed_salted_password, plain_text_password):
 			print("---password not found - probably needs to Register --- ")
 		else:
-			print("---user exists---",user_name_from_mongo)
+			#print(check_password_hash(hashed_salted_password, plain_text_password)) ## return == True
+			print("---user exists----",user_name_from_mongo)
 			login_user(user_name_from_mongo)
 			return redirect(url_for('main.main_index'))
 			#return redirect(url_for('main.questionnaire'))

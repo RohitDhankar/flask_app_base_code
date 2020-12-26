@@ -1,6 +1,7 @@
 from flask import Flask 
 from .models import User
-from .extensions import db, login_manager
+from .extensions import login_manager
+
 from .routes.main import main 
 from .routes.auth import auth 
 
@@ -17,3 +18,9 @@ def create_app(config_file='settings.py'):
 	app.register_blueprint(main)
 	app.register_blueprint(auth)
 	return app
+
+
+	"""
+	https://flask-login.readthedocs.io/en/latest/_modules/flask_login/login_manager.html#LoginManager.user_loader
+	def user_loader(self, callback):
+	"""
