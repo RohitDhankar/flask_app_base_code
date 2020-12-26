@@ -9,7 +9,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/main_index')
 def index():
-	mongo_atlas_client , db = conn_mongo_atlas()
+	db = conn_mongo_atlas()
 	print(mongo_atlas_client)
 	users_coll = db.test_users_1
 	print("---users_coll----",users_coll)
@@ -22,7 +22,7 @@ def index():
 @main.route('/questionnaire',methods=['GET','POST'])
 def questionnaire():
 	if request.method == 'POST':
-		mongo_atlas_client , db = conn_mongo_atlas()
+		db = conn_mongo_atlas()
 		#print(mongo_atlas_client)
 		users_coll = db.questions
 		print("---users_coll----",users_coll)
@@ -34,10 +34,30 @@ def questionnaire():
 @main.route('/admin_upload_q',methods=['GET','POST'])
 def admin_upload_q():
 	if request.method == 'POST':
-		mongo_atlas_client , db = conn_mongo_atlas()
+		db = conn_mongo_atlas()
 		#print(mongo_atlas_client)
 		users_coll = db.questions
 		print("---users_coll----",users_coll)
 		df = pd.read_csv(request.files.get('file'))
 		print(df)
 	return render_template('admin_upload.html')#, shape=df.shape)
+
+
+
+@main.route('/questions_to_answer')
+@login_required
+def questions_to_answer():
+	# if current_user.candidate_type:
+	# 	return redirect(url_for('main.index_for_candidate_type'))
+	db = conn_mongo_atlas()
+	questions_coll = db.questions
+	query = {}
+	questions_cursor = questions_coll.find(query)
+	unanswered_questions = pd.DataFrame(list(questions_cursor))
+	
+	context = {
+		'unanswered_questions' : unanswered_questions
+	}
+
+	return render_template('questions_to_answer.html', **context)
+	#/eclerx_app/templates/questions_to_answer.html

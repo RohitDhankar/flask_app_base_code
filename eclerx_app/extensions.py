@@ -12,8 +12,7 @@ def conn_mongo_atlas():
 	mongo_atlas_client = pymongo.MongoClient(conn_str)
 	#print("---mongo_atlas_client-----",mongo_atlas_client)
 	db = mongo_atlas_client.eclerx
-
-	return mongo_atlas_client , db
+	return db
 
 # client = pymongo.MongoClient("mongodb://eclerx_admin:<password>@eclerx-shard-00-00.2tddk.mongodb.net:27017,eclerx-shard-00-01.2tddk.mongodb.net:27017,eclerx-shard-00-02.2tddk.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-nf69f3-shard-0&authSource=admin&retryWrites=true&w=majority")
 # db = client.test

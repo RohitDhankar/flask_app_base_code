@@ -462,3 +462,103 @@ MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00
 127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
 127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /static/theme.css HTTP/1.1" 200 -
 127.0.0.1 - - [26/Dec/2020 20:26:58] "GET /favicon.ico HTTP/1.1" 404 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/auth.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f7df93e1ee0>
+MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-02.2tddk.mongodb.net:27017', 'eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+127.0.0.1 - - [26/Dec/2020 20:30:26] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:30:26] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:30:26] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:30:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:30:58] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:31:23] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:32:22] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:32:22] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:32:22] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:32:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:50:46] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:50:46] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:50:46] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:50:46] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:51:01] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:01] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:01] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:01] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:51:02] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:02] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:02] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:02] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:51:03] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:03] "GET /static/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:03] "GET /static/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:03] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [26/Dec/2020 20:51:34] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:44] "GET /register HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:48] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:51:55] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:52:07] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:52:16] "GET /main_index HTTP/1.1" 200 -
+127.0.0.1 - - [26/Dec/2020 20:52:24] "GET /register HTTP/1.1" 200 -
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fa36c59c3d0>
+MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority')
+---users_coll---- Collection(Database(MongoClient(host=['eclerx-shard-00-01.2tddk.mongodb.net:27017', 'eclerx-shard-00-00.2tddk.mongodb.net:27017', 'eclerx-shard-00-02.2tddk.mongodb.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True, replicaset='atlas-nf69f3-shard-0', authsource='admin', retrywrites=True, w='majority'), 'eclerx'), 'test_users_1')
+---Inserted user ---
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f9e8a22ed00>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f22705fee80>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f438b77feb0>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/routes/main.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f447f28bdf0>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/extensions.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fb7ce6dd430>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
+ * Detected change in '/home/dhankar/temp/flask_1/flask_1/eclerx_app/extensions.py', reloading
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fe7af53a400>
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-782-607
