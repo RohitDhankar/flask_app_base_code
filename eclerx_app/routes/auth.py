@@ -4,6 +4,7 @@ from flask import Blueprint, render_template, request, redirect, url_for
 from werkzeug.security import check_password_hash , generate_password_hash
 from flask_login import current_user, login_required , LoginManager , login_user, logout_user
 from eclerx_app.extensions import conn_mongo_atlas
+from eclerx_app.models import User as cls_user
 
 auth = Blueprint('auth', __name__)
 

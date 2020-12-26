@@ -11,6 +11,13 @@ def create_app(config_file='settings.py'):
 	login_manager.login_view = 'auth.login'
 	
 	@login_manager.user_loader
+	"""
+	dhankar comments  
+	1/ user_id -- required from Mongo -- Not Ok to have Mongo Object ID as user_id 
+	2/ why to have this method - load_user - here and also create the - main app as sen below 
+	app.register_blueprint(main) -- why would main be required to use a - load_user Or a @login_manager.user_loader
+
+	"""
 	def load_user(user_id):
 		return User.query.get(user_id)
 
