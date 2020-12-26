@@ -47,6 +47,11 @@ def register():
 {"_id":{"$oid":"5fe56a53f54e35c49898fd53"},"first_name":"FirstTestName","last_name":"LastTestName","password":"pbkdf2:sha256:150000$ylpRqlsS$edd651b01d3e828e8be4a57652a64f358d96c8ee820da0d7767cae15dd9945fa"}
 """
 
+### https://stackoverflow.com/questions/54992412/flask-login-usermixin-class-with-a-mongodb
+### https://medium.com/@dmitryrastorguev/basic-user-authentication-login-for-flask-using-mongoengine-and-wtforms-922e64ef87fe
+### https://github.com/drastorguev/flaskmongouserlogintemplate
+
+
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
 	if request.method == 'POST':
@@ -58,7 +63,6 @@ def login():
 			plain_text_password = request.form['password']
 			print("---Request HTML FORM  - FirstName---",first_name)
 			print("---Request HTML FORM  - LasttName---",last_name)
-
 
 		# inputs from cURL POST / JSON API end-point ( if any )
 		elif request.json:
@@ -73,40 +77,21 @@ def login():
 
 		query_name_from_mongo = users_coll.find({'first_name':first_name ,'last_name':last_name })
 		for doc in query_name_from_mongo:
-			print("----doc-----",type(doc)) # ----doc----- <class 'dict'>
 			first_name_from_mongo = doc['first_name']
 			last_name_from_mongo = doc['last_name']
+			plain_text_password = doc['password']
 			user_name_from_mongo = first_name_from_mongo + last_name_from_mongo
-
-		#print("----query_name_from_mongo----",query_name_from_mongo)
-
-		query_name_from_mongo_1 = users_coll.find( {'first_name':{'$eq':first_name} ,'last_name':{'$eq':last_name} })
-		for doc1 in query_name_from_mongo_1:
-			print("----doc1-----",doc1)
-
-		#print("----query_name_from_mongo_1----",query_name_from_mongo_1)
-		query_name_from_mongo_2 = users_coll.find({'first_name':{'$eq':first_name} ,'last_name':{'$eq':last_name} },{"first_name":1,"last_name":1,"password":1})
-		print("----query_name_from_mongo_2----",query_name_from_mongo_2)
-		for doc2 in query_name_from_mongo_2:
-			print("----doc2----",doc2)
-			#----doc2---- {'_id': ObjectId('5fe568c84ac3367056b28f94'), 'password': 'RandomPass#123459'}
-
-		if not first_name_from_mongo :
+			hashed_salted_password = generate_password_hash(plain_text_password,method='pbkdf2:sha256',salt_length=8)
+		
+		if not user_name_from_mongo :
 			print("---user not found needs to Register --- ")
-		if not check_password_hash(pwhash, plain_text_password):
-			print("---password not found - prbably needs to Register --- ")
+		if not check_password_hash(hashed_salted_password, plain_text_password):
+			print("---password not found - probably needs to Register --- ")
 		else:
-			print("---user exists---",first_name_from_mongo)	
-
-		# error_message = ''
-		# if not first_name_from_mongo or not check_password_hash(pwhash, plain_text_password):
-		# 	error_message = 'Could not login. Please check and try again.'
-
-		# if not error_message:
-		# 	login_user(user)
-		# 	return redirect(url_for('main.main_index'))
-		# 	#return redirect(url_for('main.questionnaire'))
-
+			print("---user exists---",user_name_from_mongo)
+			login_user(user_name_from_mongo)
+			return redirect(url_for('main.main_index'))
+			#return redirect(url_for('main.questionnaire'))
 	return render_template('login.html')
 
 
@@ -115,3 +100,16 @@ def login():
 def logout():
 	logout_user()
 	return redirect(url_for('auth.login'))
+
+
+### Foobar - OK code below 
+# query_name_from_mongo_1 = users_coll.find( {'first_name':{'$eq':first_name} ,'last_name':{'$eq':last_name} })
+# for doc1 in query_name_from_mongo_1:
+# 	print("----doc1-----",doc1)
+
+# #print("----query_name_from_mongo_1----",query_name_from_mongo_1)
+# query_name_from_mongo_2 = users_coll.find({'first_name':{'$eq':first_name} ,'last_name':{'$eq':last_name} },{"first_name":1,"last_name":1,"password":1})
+# print("----query_name_from_mongo_2----",query_name_from_mongo_2)
+# for doc2 in query_name_from_mongo_2:
+# 	print("----doc2----",doc2)
+	#----doc2---- {'_id': ObjectId('5fe568c84ac3367056b28f94'), 'password': 'RandomPass#123459'}

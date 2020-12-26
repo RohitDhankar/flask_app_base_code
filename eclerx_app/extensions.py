@@ -1,12 +1,11 @@
 
 
 from flask_login import LoginManager
-#from flask_sqlalchemy import SQLAlchemy
 import pymongo
 import urllib
 
 login_manager = LoginManager()
-# db = SQLAlchemy()
+print("--exten--login_manager----",login_manager)
 
 def conn_mongo_atlas():
 	conn_str = "mongodb://eclerx_admin:" + urllib.parse.quote("Password@0873") + "@eclerx-shard-00-00.2tddk.mongodb.net:27017,eclerx-shard-00-01.2tddk.mongodb.net:27017,eclerx-shard-00-02.2tddk.mongodb.net:27017/db_test?ssl=true&replicaSet=atlas-nf69f3-shard-0&authSource=admin&retryWrites=true&w=majority"
