@@ -3,18 +3,23 @@
 
 {% block content %}
 <div class="page-header">
-        <h1>Questions to Answer:</h1>
+        
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <div class="list-group">
-            {% for question in unanswered_questions %}
-              <a href="{{ url_for('main.answer', question_id=question.id) }}" class="list-group-item">
-                <h4 class="list-group-item-heading">{{ question.question }}</h4>
-                <p class="list-group-item-text">Question Categoty: {{ question.category }}</p>
-              </a>
-            {% endfor %}
+        <h1>Questions to Answer:</h1>
+            <ul>
+                    {% for ques in ls_q_all %}
+                    <li>
+                      {{ques}}
+                    </li>
+                    {% endfor %}
+             </ul>
+
+      <p>  Thanks for your answers - we shall email your scores</p>
+      <br>
+      <br>
+
           </div>
-        </div><!-- /.col-lg-12 -->
+        </div><!-- /.col-lg-12 question.category -->
       </div>
 {% endblock %}

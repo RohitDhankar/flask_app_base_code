@@ -10,10 +10,10 @@ main = Blueprint('main', __name__)
 @main.route('/main_index')
 def index():
 	db = conn_mongo_atlas()
-	print(mongo_atlas_client)
+
 	users_coll = db.test_users_1
 	print("---users_coll----",users_coll)
-	users_coll.insert({'USER_NAME':'Test_User_1'})
+	#users_coll.insert({'USER_NAME':'Test_User_1'})
 	print("---Inserted user ---")
 	#return render_template('index.html', **context)
 	return render_template('index.html')
@@ -43,9 +43,8 @@ def admin_upload_q():
 	return render_template('admin_upload.html')#, shape=df.shape)
 
 
-
+#@login_required
 @main.route('/questions_to_answer')
-@login_required
 def questions_to_answer():
 	# if current_user.candidate_type:
 	# 	return redirect(url_for('main.index_for_candidate_type'))
@@ -53,11 +52,20 @@ def questions_to_answer():
 	questions_coll = db.questions
 	query = {}
 	questions_cursor = questions_coll.find(query)
-	unanswered_questions = pd.DataFrame(list(questions_cursor))
-	
-	context = {
-		'unanswered_questions' : unanswered_questions
-	}
+	df_q_all = pd.DataFrame(list(questions_cursor))
+	del df_q_all['_id']
+	ls_q_all = df_q_all['QUESTIONS'].tolist()
 
-	return render_template('questions_to_answer.html', **context)
+	# data = json.loads(df_q_all.to_json(orient='split'))
+	# dict_json = {}
+	# dict_json['data_json'] = data
+
+	context = {
+		'dict_q_all' : df_q_all.to_dict(orient='split')
+	}
+	# context = {
+	# 	'df_html' : df_html
+	# }
+
+	return render_template('questions_to_answer.html', ls_q_all = df_q_all['QUESTIONS'].tolist())
 	#/eclerx_app/templates/questions_to_answer.html

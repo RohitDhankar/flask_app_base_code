@@ -74,7 +74,7 @@ def login():
 			print("---JSON Request through cURL - FirstName---",first_name)
 			print("---JSON Request through cURL - LasttName---",last_name)
 
-		mongo_atlas_client , db = conn_mongo_atlas()
+		db = conn_mongo_atlas()
 		users_coll = db.users
 
 		query_name_from_mongo = users_coll.find({'first_name':first_name ,'last_name':last_name })
@@ -92,12 +92,12 @@ def login():
 		else:
 			#print(check_password_hash(hashed_salted_password, plain_text_password)) ## return == True
 			print("---user exists----",user_name_from_mongo)
-			user_obj = cls_user(username = user_name_from_mongo)
-			login_user(user_obj)
+			return redirect(url_for('main.questions_to_answer'))
+			# user_obj = cls_user(username = user_name_from_mongo)
+			# login_user(user_obj)
 			# https://github.com/maxcountryman/flask-login/blob/d7b5bcf5d003274227be5c19104c59a821097cd1/flask_login/utils.py#L145
-			#return redirect(url_for('main.main_index'))
-			return redirect(url_for('main.index'))
-			#return redirect(url_for('main.questionnaire'))
+			#return redirect(url_for('main.index'))
+			#return redirect(url_for('main.questions_to_answer'))
 	return render_template('login.html')
 
 
