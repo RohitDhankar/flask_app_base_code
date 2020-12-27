@@ -1,0 +1,59 @@
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7ff513586670>
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f23ffb01880>
+<eclerx_app.routes.forms.LoginForm object at 0x7f23d8dca160>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f065a7e3100>
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f17e2615f70>
+<eclerx_app.routes.forms.LoginForm object at 0x7f17bc163520>
+<eclerx_app.routes.forms.LoginForm object at 0x7f17bb94e5e0>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fcbe18c7bb0>
+
+### More text logs below 
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fc14570b820>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f8d419dfdf0>
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fdadfb138b0>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f7d72de78b0>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fbbdab6b8e0>
+<eclerx_app.routes.forms.LoginForm object at 0x7fbbb3e46730>
+<eclerx_app.routes.forms.LoginForm object at 0x7fbbb362b9d0>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fa484bfbdc0>
+<eclerx_app.routes.forms.LoginForm object at 0x7fa45dede790>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f22ad031bb0>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f0cb0850820>
+<eclerx_app.routes.forms.LoginForm object at 0x7f0c89b557f0>
+<eclerx_app.routes.forms.LoginForm object at 0x7f0c8933e910>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f6a344767f0>
+<eclerx_app.routes.forms.LoginForm object at 0x7f6a0e09d7f0>
+<eclerx_app.routes.forms.LoginForm object at 0x7f6a0e09d9d0>
+<eclerx_app.routes.forms.LoginForm object at 0x7f6a0e09d790>
+<eclerx_app.routes.forms.LoginForm object at 0x7f6a0e09de20>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7ff36f5448e0>
+---AAA
+<eclerx_app.routes.forms.LoginForm object at 0x7ff34882a430>
+<eclerx_app.routes.forms.LoginForm object at 0x7ff34882a3d0>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7feb06cf8880>
+ * Serving Flask app "eclerx_app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7f9b41a0de80>
+---AAA
+<eclerx_app.routes.forms.LoginForm object at 0x7f9b1b5a1790>
+<eclerx_app.routes.forms.LoginForm object at 0x7f9b1b5a1730>
+--exten--login_manager---- <flask_login.login_manager.LoginManager object at 0x7fe350fade20>

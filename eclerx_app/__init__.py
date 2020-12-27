@@ -4,6 +4,7 @@ from .extensions import login_manager
 
 from .routes.main import main 
 from .routes.auth import auth 
+from flask_bootstrap import Bootstrap
 
 def create_app(config_file='settings.py'):
 	app = Flask(__name__)
@@ -28,6 +29,7 @@ def create_app(config_file='settings.py'):
 	app.config.from_pyfile(config_file)
 	app.register_blueprint(main)
 	app.register_blueprint(auth)
+	bootstrap = Bootstrap(app)
 	return app
 
 

@@ -8,5 +8,5 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 """ 
 Alternatively as done in the - FLASK_megaTutorial - and other such guides 
-we can have a -- config.py - in which we have a class== Config 
+we can have a separate python module named == config.py - in which we have a class== Config 
 """

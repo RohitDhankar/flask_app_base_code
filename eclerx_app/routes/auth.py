@@ -5,8 +5,11 @@ from werkzeug.security import check_password_hash , generate_password_hash
 from flask_login import current_user, login_required , LoginManager , login_user, logout_user
 from eclerx_app.extensions import conn_mongo_atlas
 from eclerx_app.models import User as cls_user
+from flask_bootstrap import Bootstrap
+
 
 from .main import main 
+from .forms import LoginForm
 
 
 auth = Blueprint('auth', __name__)
@@ -51,10 +54,42 @@ def register():
 {"_id":{"$oid":"5fe56a53f54e35c49898fd53"},"first_name":"FirstTestName","last_name":"LastTestName","password":"pbkdf2:sha256:150000$ylpRqlsS$edd651b01d3e828e8be4a57652a64f358d96c8ee820da0d7767cae15dd9945fa"}
 """
 
-
+from flask_babel import _
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
+	print("---AAA")
+	form = LoginForm()
+	print(form)
+
+	if current_user.is_authenticated:
+		print("---current_user---",current_user)
+		form = LoginForm()
+		print(form)
+	else:
+		#return redirect(url_for('main.index'))
+		form = LoginForm()
+		print(form)
+	# if form.validate_on_submit():
+	# 	user = User.query.filter_by(username=form.username.data).first()
+	# 	if user is None or not user.check_password(form.password.data):
+	# 		flash(_('Invalid username or password'))
+	# 		return redirect(url_for('auth.login'))
+	# 	login_user(user, remember=form.remember_me.data)
+	# 	next_page = request.args.get('next')
+	# 	if not next_page or url_parse(next_page).netloc != '':
+	# 		next_page = url_for('main.index')
+	# 	return redirect(next_page)
+	#return render_template('auth/login.html', title=_('Sign In'), form=form)
+	return render_template('login.html', form=form)
+
+
+
+
+
+
+@auth.route('/login_1', methods=['GET', 'POST'])
+def login_1():
 	""" https://github.com/maxcountryman/flask-login/blob/d7b5bcf5d003274227be5c19104c59a821097cd1/flask_login/utils.py#L145
 	"""
 	if request.method == 'POST':
