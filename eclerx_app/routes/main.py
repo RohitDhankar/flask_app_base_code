@@ -3,7 +3,7 @@ from flask_login import current_user, login_required , LoginManager
 from werkzeug.utils import secure_filename
 import pandas as pd
 
-from eclerx_app.extensions import conn_mongo_atlas
+from example_org__app.extensions import conn_mongo_atlas
 
 main = Blueprint('main', __name__)
 
@@ -68,4 +68,4 @@ def questions_to_answer():
 	# }
 
 	return render_template('questions_to_answer.html', ls_q_all = df_q_all['QUESTIONS'].tolist())
-	#/eclerx_app/templates/questions_to_answer.html
+	#/example_org__app/templates/questions_to_answer.html

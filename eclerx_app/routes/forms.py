@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import ValidationError, DataRequired, Length
 from flask_babel import _ , lazy_gettext as _l #tute_code
-from eclerx_app.models import User as cls_user
+from example_org__app.models import User as cls_user
 
 
 class LoginForm(FlaskForm):

@@ -3,8 +3,8 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from werkzeug.security import check_password_hash , generate_password_hash
 from flask_login import current_user, login_required , LoginManager , login_user, logout_user
-from eclerx_app.extensions import conn_mongo_atlas
-from eclerx_app.models import User as cls_user
+from example_org__app.extensions import conn_mongo_atlas
+from example_org__app.models import User as cls_user
 from flask_bootstrap import Bootstrap
 
 
@@ -15,7 +15,7 @@ from .forms import LoginForm
 auth = Blueprint('auth', __name__)
 
 login_manager = LoginManager()
-login_manager.login_message = u"You need to Login into the eClerx /n auth-system to view this page ."
+login_manager.login_message = u"You need to Login into the example_org_ /n auth-system to view this page ."
 
 @auth.route('/register', methods=['GET', 'POST'])
 def register():
