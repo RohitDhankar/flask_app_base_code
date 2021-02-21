@@ -1,3 +1,6 @@
+## test comment 
+
+
 $ flask run | tee -ai terminal_test.log
 ## above saving terminal_test.lof file --- after the tee -- 
 ## Option -a for APPEND and 
